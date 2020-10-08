@@ -1,38 +1,102 @@
 .App {
+  width: 50%;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Courgette", cursive;
+  background: #ffe5d9;
+  color: #9d8189;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#filter {
+  margin-bottom: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+#filter-button {
+  width: 30%;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-family: "Courgette", cursive;
+  color: #9d8189;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#filter-button.active {
+  border-bottom: 5px solid #ffcad4;
+}
+
+#new-todo {
+  width: 40%;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: "Courgette", cursive;
+  background: transparent;
+  border: 3px solid #ffcad4;
+  border-radius: 10px;
+  color: #9d8189;
+  outline: none;
+  box-shadow: 0 0 10px #ffcad4;
+}
+
+#new-todo::placeholder {
+  color: #9d8189;
+}
+
+#add-todo {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Courgette", cursive;
+  background: transparent;
+  border: 3px solid #d8e2dc;
+  border-radius: 10px;
+  color: #9d8189;
+  outline: none;
+}
+
+#add-todo:hover {
+  box-shadow: 0 0 5px #d8e2dc;
+}
+
+#clear {
+  padding: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Courgette", cursive;
+  background: transparent;
+  border: 3px solid #d8e2dc;
+  border-radius: 10px;
+  color: #f4acb7;
+  outline: none;
+}
+
+#clear:hover {
+  box-shadow: 0 0 10px #d8e2dc;
+}
+
+#list {
+  margin-top: 24px;
+  list-style: square;
+  text-align: left;
+}
+
+#list-item {
+  padding: 15px;
+  font-size: 22px;
+}
+
+li.completed {
+  text-decoration: line-through;
 }

@@ -1,1 +1,1 @@
-export { useExample } from '../ducks/example'
+export { useExample } from "../ducks/example";
